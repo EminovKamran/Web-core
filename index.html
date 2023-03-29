@@ -1,13 +1,64 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Web-core</title>
 </head>
 <body>
-
+    <header class="header">
+        <div class="header__burger header__burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a class="header__logo-elem" href="#">
+            <div class="logo"></div>
+        </a>
+        <button class="request"></button>
+        <button class="search"></button>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <div class="main__title">
+                <p class="main__text">Услуги и сервисы</p>
+                <a class="main__container-request" href="#">
+                    <button class="request"></button>
+                </a>
+                <a class="main__container-search" href="#">
+                    <button class="search"></button>
+                </a>
+            </div>
+            <ul class="main__menu">
+                <li class="main__item main__item-border">
+                    Ремонтируемые бренды
+                </li>
+                <li class="main__item">
+                    Дополнительные услуги
+                </li>
+                <li class="main__item">
+                    Цены на услуги
+                </li>
+                <li class="main__item">
+                    Адреса сервисных центров
+                </li>
+                <li class="main__item">
+                    Специальные цены
+                </li>
+            </ul>
+            <p class="main__description">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                <a class="main__description-next" href="#">
+                    <span class="main__description-img"></span>
+                    Читать далее
+                </a>
+            </p>
+        </div>
+    </main>
 </body>
 </html>
