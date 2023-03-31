@@ -10,55 +10,91 @@
     <title>Web-core</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__burger header__burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <a class="header__logo-elem" href="#">
-            <div class="logo"></div>
-        </a>
-        <button class="request"></button>
-        <button class="search"></button>
-    </header>
-    <main class="main">
-        <div class="main__container">
-            <div class="main__title">
-                <p class="main__text">Услуги и сервисы</p>
-                <a class="main__container-request" href="#">
-                    <button class="request"></button>
-                </a>
-                <a class="main__container-search" href="#">
-                    <button class="search"></button>
+    <div class="wrapper">
+        <header class="header">
+            <aside class="aside">
+                <nav class="nav__aside">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="">Ремонт техники</a></li>
+                        <li class="nav__item"><a href="">Услуги и сервисы</a></li>
+                        <li class="nav__item"><a href="">Корпоративным клиентам</a></li>
+                        <li class="nav__item"><a href="">Продавцам техники</a></li>
+                        <li class="nav__item"><a href="">Партнерам</a></li>
+                        <li class="nav__item"><a href="">Производителям</a></li>
+                        <li class="nav__item"><a href="">Наши сервисные центры</a></li>
+                        <li class="nav__item"><a href="">Наши сервисные центры</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="header__container">
+                <div class="header__burger header__burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="header__logo-elem" href="#">
+                    <div class="logo"></div>
                 </a>
             </div>
-            <ul class="main__menu">
-                <li class="main__item main__item-border">
-                    Ремонтируемые бренды
-                </li>
-                <li class="main__item">
-                    Дополнительные услуги
-                </li>
-                <li class="main__item">
-                    Цены на услуги
-                </li>
-                <li class="main__item">
-                    Адреса сервисных центров
-                </li>
-                <li class="main__item">
-                    Специальные цены
-                </li>
-            </ul>
-            <p class="main__description">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                <a class="main__description-next" href="#">
-                    <span class="main__description-img"></span>
-                    Читать далее
-                </a>
-            </p>
-        </div>
-    </main>
+            <nav class="nav">
+                <button class="call"></button>
+                <button class="message"></button>
+                <button class="user"></button>
+                <button class="request"></button>
+                <button class="search"></button>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__title">
+                    <p class="main__text">Услуги и сервисы</p>
+                    <div class="main__container__elem">
+                        <a class="main__container-request" href="#">
+                            <p class="request__text">Оставить заявку</p>
+                            <button class="request"></button>
+                        </a>
+                        <a class="main__container-search" href="#">
+                            <p class="search__text">Статус ремонта</p>
+                            <button class="search"></button>
+                        </a>
+                    </div>
+                </div>
+                <ul class="main__menu">
+                    <li class="main__item main__item-border">
+                        Ремонтируемые бренды
+                    </li>
+                    <li class="main__item">
+                        Дополнительные услуги
+                    </li>
+                    <li class="main__item">
+                        Цены на услуги
+                    </li>
+                    <li class="main__item">
+                        Адреса сервисных центров
+                    </li>
+                    <li class="main__item">
+                        Специальные цены
+                    </li>
+                </ul>
+                <section class="main__description">
+                    <div class="main__description__box">
+                        <p class="main__description-about-me">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p class="main__description-continue">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        </p>
+                        <a class="main__description-next" href="#">
+                            <span class="main__description-img"></span>
+                            Читать далее
+                        </a>
+                    </div>
+                    <picture class="main__image">
+                        <source srcset="./images/png/main__image768.png" media="(min-width: 550px)">
+                        <img src="./images/png/img_main.png" alt="main_img">
+                    </picture>
+                </section>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

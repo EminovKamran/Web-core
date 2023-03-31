@@ -8,9 +8,23 @@
     align-items: center;
     padding: 16px;
     border-bottom: 1px solid #D9FFF5;
+    background: #FFFFFF;
+}
+.wrapper {
+    background: #F8F8F8;
+}
+.aside {
+    display: none;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    display: flex;
 }
 .logo {
-    background-image: url("./images/logo.svg");
+    background-image: url("images/svg/logo.svg");
     background-repeat: no-repeat;
     width: 97px;
     height: 51px;
@@ -70,7 +84,7 @@ a {
     top: 70%;
 }
 .request {
-    background-image: url("./images/request.svg");
+    background-image: url("./images/svg/request.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF3E79;
@@ -82,7 +96,7 @@ a {
     border: none;
 }
 .search {
-    background-image: url("./images/search.svg");
+    background-image: url("./images/svg/search.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF3E79;
@@ -93,9 +107,6 @@ a {
     cursor: pointer;
     border: none;
 }
-.main {
-    background: #F8F8F8;;
-}
 .main__container-search {
     display: none;
 }
@@ -103,13 +114,13 @@ a {
     display: none;
 }
 .main__container {
-    padding: 24px 0;
+    padding: 24px 0 0 0;
 }
 .main__menu {
     display: flex;
     gap: 25px;
     overflow-x: scroll;
-    margin: 0 0 24px 16px;
+    margin: 0 0 24px 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
     align-items: center;
@@ -136,13 +147,12 @@ a {
 .main__title {
     margin: 0 0 24px 0;
 }
-.main__description {
+.main__description-about-me {
     font-family: 'TT Lakes Regular', sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
-    padding: 0 16px;
 }
 .main__text {
     display: flex;
@@ -163,7 +173,7 @@ a {
     margin-right: 16px;
 }
 .main__description-img {
-    background-image: url("./images/icon.svg");
+    background-image: url("images/svg/icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -177,6 +187,176 @@ a {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
-    margin: 16px 0 16px 0;
+    margin-top: 16px;
 }
-
+.main__description__box {
+    max-width: 344px;
+}
+.call, .user, .message {
+    display: none;
+}
+.main__description-continue {
+    display: none;
+}
+@media (min-width: 550px) {
+    .header {
+        justify-content: space-between;
+    }
+    .aside {
+        display: none;
+    }
+    .call {
+        background-image: url("images/svg/call.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        display: block;
+    }
+    .message {
+        background-image: url("images/svg/message.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 16px;
+        cursor: pointer;
+        border: none;
+        display: block;
+    }
+    .user {
+        background-image: url("images/svg/user.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 16px;
+        margin-right: 20px;
+        cursor: pointer;
+        border: none;
+        display: block;
+    }
+    .header__logo-elem::after {
+        display: none;
+    }
+    .header__logo-elem::before {
+        content: "";
+        height: 32px;
+        width: 2px;
+        background: #EAEAEA;
+        display: inline-block;
+    }
+    .logo {
+        margin: 0 0 0 16px;
+    }
+    .request::after {
+        content: "";
+        height: 32px;
+        width: 2px;
+        background: #EAEAEA;
+        display: block;
+        margin-left: -20px;
+    }
+    .main__description {
+        display: flex;
+        max-width: 720px;
+        justify-content: space-between;
+    }
+    .main__description-continue {
+        font-family: 'TT Lakes Regular', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        display: block;
+        margin-top: 19px;
+    }
+    .main__container {
+        padding: 24px 24px 0 24px;
+    }
+    .main__text::before {
+        content: "";
+        width: 4px;
+        height: 40px;
+        background: #41F6D7;
+        display: inline-block;
+        border-radius: 0 9px 9px 0;
+        margin-left: -22px;
+        position: absolute;
+    }
+}
+@media (min-width: 1050px) {
+    .header {
+        padding: 0;
+    }
+    .header__container {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .aside {
+        display: block;
+    }
+    /*.main {*/
+    /*    !*max-width: 1064px;*!*/
+    /*    !*padding: 0 28px 0 34px;*!*/
+    /*}*/
+    .wrapper {
+        display: flex;
+    }
+    .main_menu {
+        flex-wrap: wrap;
+    }
+    .main {
+        width: 100%;
+    }
+    .main__container {
+        padding: 42px 22px 0 34px;
+    }
+    .nav__item, a {
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'TT Lakes Regular', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+    .main__container-request {
+        display: flex;
+    }
+    .main__container-search {
+        display: flex;
+    }
+    .main__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main__container__elem {
+        display: flex;
+        gap: 32px;
+    }
+    .request::after {
+        display: none;
+    }
+    .main__text::before {
+        content: "";
+        width: 4px;
+        height: 40px;
+        background: #41F6D7;
+        display: inline-block;
+        border-radius: 0 9px 9px 0;
+        margin-left: -33px;
+        position: absolute;
+    }
+}
