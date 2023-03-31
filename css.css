@@ -9,6 +9,7 @@
     padding: 16px;
     border-bottom: 1px solid #D9FFF5;
     background: #FFFFFF;
+    justify-content: space-between;
 }
 .wrapper {
     background: #F8F8F8;
