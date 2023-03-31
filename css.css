@@ -192,6 +192,7 @@ a {
 }
 .main__description__box {
     margin-left: 16px;
+    margin-right: 48px;
 }
 .call, .user, .message {
     display: none;
@@ -310,16 +311,15 @@ a {
         display: none;
     }
     .aside {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
     }
-    .wrapper {
+    .container {
         display: flex;
     }
     .main_menu {
         flex-wrap: wrap;
-    }
-    .main {
-        width: 100%;
     }
     .main__container {
         padding: 42px 22px 0 34px;
@@ -369,6 +369,97 @@ a {
         position: absolute;
     }
     .main__description__box {
+        margin: 0 36px 0 0;
+    }
+    .main__wrapper {
+        display: flex;
+    }
+    .aside__logo {
+        display: flex;
+        padding: 36px 29px 22px 22px;
+        width: 257px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
         margin: 0;
+    }
+    .search__aside {
+        background-image: url("./images/svg/search_aside.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+    }
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        padding-left: 19px;
+    }
+    .nav__aside {
+        margin-top: 25px;
+    }
+    .nav__item:nth-child(2) a {
+        color: #7E7E82;
+    }
+    .nav__item:nth-child(2) a::before {
+        content: "";
+        width: 4px;
+        height: 29px;
+        background: #41F6D7;
+        display: inline-block;
+        border-radius: 0 9px 9px 0;
+        margin-left: -19px;
+        position: absolute;
+    }
+    .aside__contact {
+        display: flex;
+        gap: 16px;
+        margin-top: 241px;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+    .call {
+        margin: 0;
+    }
+    .message {
+        margin: 0;
+    }
+    .user {
+        margin: 0;
+    }
+    .aside__email {
+        font-family: 'TT Lakes Regular', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        margin-left: 16px;
+    }
+    .aside__number {
+        margin: 12px 0 40px 16px;
+        font-family: 'TT Lakes Bold', sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        color: #1B1C21;
+    }
+    .aside__language {
+        display: flex;
+        gap: 7px;
+        margin-left: 16px;
+        font-family: 'TT Lakes Regular', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+    .aside__language p:first-child {
+        color: #7E7E82;
     }
 }
