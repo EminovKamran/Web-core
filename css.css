@@ -120,7 +120,7 @@ a {
     display: flex;
     gap: 25px;
     overflow-x: scroll;
-    margin: 0 0 24px 0;
+    margin: 0 0 24px 16px;
     scrollbar-width: none;
     -ms-overflow-style: none;
     align-items: center;
@@ -191,6 +191,7 @@ a {
 }
 .main__description__box {
     max-width: 344px;
+    margin-left: 16px;
 }
 .call, .user, .message {
     display: none;
@@ -289,8 +290,14 @@ a {
         background: #41F6D7;
         display: inline-block;
         border-radius: 0 9px 9px 0;
-        margin-left: -22px;
+        margin-left: -24px;
         position: absolute;
+    }
+    .main__description__box {
+        margin: 0;
+    }
+    .main__menu {
+        margin: 0 0 24px 0;
     }
 }
 @media (min-width: 1050px) {
@@ -306,10 +313,6 @@ a {
     .aside {
         display: block;
     }
-    /*.main {*/
-    /*    !*max-width: 1064px;*!*/
-    /*    !*padding: 0 28px 0 34px;*!*/
-    /*}*/
     .wrapper {
         display: flex;
     }
@@ -321,6 +324,9 @@ a {
     }
     .main__container {
         padding: 42px 22px 0 34px;
+    }
+    .main__menu {
+        margin: 0 0 24px 0;
     }
     .nav__item, a {
         list-style-type: none;
@@ -358,5 +364,8 @@ a {
         border-radius: 0 9px 9px 0;
         margin-left: -33px;
         position: absolute;
+    }
+    .main__description__box {
+        margin: 0;
     }
 }
