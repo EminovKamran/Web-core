@@ -118,7 +118,8 @@ a {
 }
 .main__menu {
     display: flex;
-    gap: 25px;
+    column-gap: 25px;
+    row-gap: 14px;
     overflow-x: scroll;
     margin: 0 0 24px 16px;
     scrollbar-width: none;
@@ -190,7 +191,6 @@ a {
     margin-top: 16px;
 }
 .main__description__box {
-    max-width: 344px;
     margin-left: 16px;
 }
 .call, .user, .message {
@@ -268,7 +268,6 @@ a {
     }
     .main__description {
         display: flex;
-        max-width: 720px;
         justify-content: space-between;
     }
     .main__description-continue {
@@ -327,6 +326,10 @@ a {
     }
     .main__menu {
         margin: 0 0 24px 0;
+        flex-wrap: wrap;
+    }
+    .main__item:last-child {
+        margin-left: 24px;
     }
     .nav__item, a {
         list-style-type: none;
