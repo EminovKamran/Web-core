@@ -143,6 +143,7 @@ a {
     letter-spacing: -0.2px;
     color: #7E7E82;
     min-width: max-content;
+    cursor: pointer;
 }
 .main__item-border {
     padding: 8px 10px 8px 17px;
@@ -476,5 +477,14 @@ a {
     }
     .main__description-continue-two {
         display: inline;
+    }
+    .aside__language > p {
+        cursor: pointer;
+    }
+    .aside__email {
+        cursor: pointer;
+    }
+    .aside__number {
+        cursor: pointer;
     }
 }
