@@ -366,12 +366,12 @@ a {
         margin-left: 18px;
     }
 
-    .main__container-request {
-        display: flex;
-    }
-    .main__container-search {
-        display: flex;
-    }
+    /*.main__container-request {*/
+    /*    display: flex;*/
+    /*}*/
+    /*.main__container-search {*/
+    /*    display: flex;*/
+    /*}*/
     .main__title {
         display: flex;
         align-items: center;
@@ -501,5 +501,14 @@ a {
     }
     .aside__number {
         cursor: pointer;
+    }
+    .main__container__text {
+        display: flex;
+        align-items: center;
+        font-family: 'TT Lakes Regular';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
     }
 }
