@@ -25,11 +25,11 @@
     display: flex;
     align-items: center;
 }
-.nav {
+.menu {
     display: flex;
 }
 .logo {
-    background-image: url("images/svg/logo.svg");
+    background-image: url("images/logo.svg");
     background-repeat: no-repeat;
     width: 97px;
     height: 51px;
@@ -89,7 +89,7 @@ a {
     top: 70%;
 }
 .request {
-    background-image: url("./images/svg/request.svg");
+    background-image: url("images/request.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF3E79;
@@ -101,7 +101,7 @@ a {
     border: none;
 }
 .search {
-    background-image: url("./images/svg/search.svg");
+    background-image: url("images/search.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF3E79;
@@ -180,7 +180,7 @@ a {
     margin-right: 16px;
 }
 .main__description-img {
-    background-image: url("images/svg/icon.svg");
+    background-image: url("images/icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
@@ -217,7 +217,7 @@ a {
         display: none;
     }
     .call {
-        background-image: url("images/svg/call.svg");
+        background-image: url("images/call.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-color: #FF3E79;
@@ -229,7 +229,7 @@ a {
         display: block;
     }
     .message {
-        background-image: url("images/svg/message.svg");
+        background-image: url("images/message.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-color: #FF3E79;
@@ -242,7 +242,7 @@ a {
         display: block;
     }
     .user {
-        background-image: url("images/svg/user.svg");
+        background-image: url("images/user.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-color: #FF3E79;
@@ -319,7 +319,7 @@ a {
     .header__container {
         display: none;
     }
-    .nav {
+    .menu {
         display: none;
     }
     .aside {
@@ -398,7 +398,7 @@ a {
         margin: 0;
     }
     .search__aside {
-        background-image: url("./images/svg/search_aside.svg");
+        background-image: url("images/search_aside.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-color: #FF3E79;
