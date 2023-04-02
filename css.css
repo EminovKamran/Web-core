@@ -503,9 +503,17 @@ a {
     }
     .aside__email {
         cursor: pointer;
+        transition: all 0.5s;
+    }
+    .aside__email:hover {
+        color: #7E7E82;
     }
     .aside__number {
         cursor: pointer;
+        transition: all 0.5s;
+    }
+    .aside__number:hover {
+        color: #7E7E82;
     }
     .header__logo-elem::before {
         display: none;
