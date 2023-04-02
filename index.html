@@ -23,7 +23,7 @@
                         <div class="logo"></div>
                     </a>
                 </div>
-                <div class="menu">
+                <div class="menu-button">
                     <button class="call"></button>
                     <button class="message"></button>
                     <button class="user"></button>
@@ -60,9 +60,9 @@
                         <p class="aside__email">mail@cps.com</p>
                         <p class="aside__number">8 800 890 8900</p>
                         <div class="aside__language">
-                            <p class="ru">RU</p>
-                            <p class="en">EN</p>
-                            <p class="ch">CH</p>
+                            <button class="ru">RU</button>
+                            <button class="en">EN</button>
+                            <button class="ch">CH</button>
                         </div>
                     </aside>
                     <div class="main__container">
@@ -79,26 +79,16 @@
                                 </a>
                             </div>
                         </div>
-                        <ul class="main__menu">
-                            <li class="main__item main__item-border">
-                                Ремонтируемые бренды
-                            </li>
-                            <li class="main__item">
-                                Дополнительные услуги
-                            </li>
-                            <li class="main__item">
-                                Цены на услуги
-                            </li>
-                            <li class="main__item">
-                                Адреса сервисных центров
-                            </li>
-                            <li class="main__item">
-                                Специальные цены
-                            </li>
-                            <li class="main__item">
-                                Отзывы
-                            </li>
-                        </ul>
+                        <nav class="menu">
+                            <ul class="main__menu">
+                                <li class="main__item main__item-border"><a href="#"></a>Ремонтируемые бренды</li>
+                                <li class="main__item"><a href="#">Дополнительные услуги</a></li>
+                                <li class="main__item"><a href="#">Цены на услуги</a></li>
+                                <li class="main__item"><a href="#">Адреса сервисных центров</a></li>
+                                <li class="main__item"><a href="#">Специальные цены</a></li>
+                                <li class="main__item"><a href="#">Отзывы</a></li>
+                            </ul>
+                        </nav>
                         <section class="main__description">
                             <div class="main__description__box">
                                 <p class="main__description-about-me">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
@@ -110,10 +100,10 @@
                                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                                     </span>
                                 </p>
-                                <a class="main__description-next" href="#">
+                                <button class="main__description__next">
                                     <span class="main__description-img"></span>
                                     Читать далее
-                                </a>
+                                </button>
                             </div>
                             <picture class="main__image">
                                 <source srcset="images/main__image-1440.png" media="(min-width: 1150px)">
