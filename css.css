@@ -46,6 +46,7 @@ a {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
+    transition: all 0.3s;
 }
 .header__container::after {
     content: '';
@@ -67,6 +68,10 @@ a {
     background-position: center;
     border: none;
     margin-right: 16px;
+    transition: all 0.5s;
+}
+.header__burger:hover {
+    background-color: #f54298;
 }
 .request {
     background-image: url("images/request.svg");
@@ -79,6 +84,10 @@ a {
     margin-left: 20px;
     cursor: pointer;
     border: none;
+    transition: all 0.5s;
+}
+.request:hover {
+    background-color: #f54298;
 }
 .search {
     background-image: url("images/search.svg");
@@ -91,6 +100,10 @@ a {
     margin-left: 16px;
     cursor: pointer;
     border: none;
+    transition: all 0.5s;
+}
+.search:hover {
+    background-color: #f54298;
 }
 .main__container-search {
     display: none;
@@ -179,6 +192,10 @@ a {
     border: none;
     display: flex;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.main__description__next:hover {
+    color: #7E7E82;
 }
 .main__description__box {
     margin: 0 16px 0 16px;
@@ -214,6 +231,10 @@ a {
         cursor: pointer;
         border: none;
         display: block;
+        transition: all 0.5s;
+    }
+    .call:hover {
+        background-color: #f54298;
     }
     .message {
         background-image: url("images/message.svg");
@@ -227,6 +248,10 @@ a {
         cursor: pointer;
         border: none;
         display: block;
+        transition: all 0.5s;
+    }
+    .message:hover {
+        background-color: #f54298;
     }
     .user {
         background-image: url("images/user.svg");
@@ -241,6 +266,10 @@ a {
         cursor: pointer;
         border: none;
         display: block;
+        transition: all 0.5s;
+    }
+    .user:hover {
+        background-color: #f54298;
     }
     .header__container::after {
         display: none;
@@ -339,6 +368,9 @@ a {
         margin-right: 78px;
         margin-left: 18px;
     }
+    .main__item a:hover {
+        color: #7E7E82;
+    }
     .main__title {
         display: flex;
         align-items: center;
@@ -387,12 +419,15 @@ a {
         border-radius: 20px;
         cursor: pointer;
         border: none;
+        transition: all 0.5s;
+    }
+    .search__aside:hover {
+        background-color: #f54298;
     }
     .nav__list {
         display: flex;
         flex-direction: column;
         gap: 28px;
-        /* padding-left: 19px; */
     }
     .nav__aside {
         margin-top: 25px;
@@ -410,11 +445,13 @@ a {
         margin-left: -21px;
         position: absolute;
     }
+    .nav__item a:hover {
+        color: #7E7E82;
+    }
     .aside__contact {
         display: flex;
         gap: 16px;
         margin-top: 241px;
-        /* margin-left: 16px; */
         margin-bottom: 16px;
     }
     .call {
@@ -432,7 +469,6 @@ a {
         line-height: 24px;
         letter-spacing: -0.2px;
         color: #1B1C21;
-        /* margin-left: 16px; */
     }
     .aside__number {
         margin: 12px 0 40px 0;
@@ -445,7 +481,6 @@ a {
     .aside__language {
         display: flex;
         gap: 7px;
-        /* margin-left: 16px; */
         font-family: 'TT Lakes Regular', sans-serif;
         font-size: 16px;
         line-height: 24px;
@@ -463,19 +498,33 @@ a {
         border: none;
         cursor: pointer;
     }
+    .aside__language > button:hover {
+        color: #7E7E82;
+    }
     .aside__email {
         cursor: pointer;
     }
     .aside__number {
         cursor: pointer;
     }
+    .header__logo-elem::before {
+        display: none;
+    }
     .main__container__text {
         display: flex;
         align-items: center;
-        font-family: 'TT Lakes Regular';
+        font-family: 'TT Lakes Regular', sans-serif;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
         color: #1B1C21;
+        transition: all 0.5s;
+    }
+    .main__container__text:hover {
+        color: #7E7E82;
+        cursor: pointer;
+    }
+    .main__container__text:hover > button {
+        background-color: #f54298;
     }
 }
