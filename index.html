@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -13,14 +13,8 @@
         <div class="container">
             <header class="header">
                 <div class="header__container">
-                    <div class="header__burger header__burger-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <a class="header__logo-elem" href="#">
-                        <div class="logo"></div>
-                    </a>
+                    <button class="header__burger"></button>
+                    <a href="#" class="logo header__logo-elem"></a>
                 </div>
                 <div class="menu-button">
                     <button class="call"></button>
@@ -34,21 +28,19 @@
                 <div class="main__wrapper">
                     <aside class="aside">
                         <div class="aside__logo">
-                            <a href="">
-                                <div class="logo"></div>
-                            </a>
+                            <a href="#" class="logo header__logo-elem"></a>
                             <button class="search__aside"></button>
                         </div>
                         <nav class="nav__aside">
                             <ul class="nav__list">
-                                <li class="nav__item"><a href="">Ремонт техники</a></li>
-                                <li class="nav__item"><a href="">Услуги и сервисы</a></li>
-                                <li class="nav__item"><a href="">Корпоративным клиентам</a></li>
-                                <li class="nav__item"><a href="">Продавцам техники</a></li>
-                                <li class="nav__item"><a href="">Партнерам</a></li>
-                                <li class="nav__item"><a href="">Производителям</a></li>
-                                <li class="nav__item"><a href="">Наши сервисные центры</a></li>
-                                <li class="nav__item"><a href="">Контакты</a></li>
+                                <li class="nav__item"><a href="#">Ремонт техники</a></li>
+                                <li class="nav__item"><a href="#">Услуги и сервисы</a></li>
+                                <li class="nav__item"><a href="#">Корпоративным клиентам</a></li>
+                                <li class="nav__item"><a href="#">Продавцам техники</a></li>
+                                <li class="nav__item"><a href="#">Партнерам</a></li>
+                                <li class="nav__item"><a href="#">Производителям</a></li>
+                                <li class="nav__item"><a href="#">Наши сервисные центры</a></li>
+                                <li class="nav__item"><a href="#">Контакты</a></li>
                             </ul>
                         </nav>
                         <div class="aside__contact">
@@ -56,8 +48,8 @@
                             <button class="message"></button>
                             <button class="user"></button>
                         </div>
-                        <p class="aside__email">mail@cps.com</p>
-                        <p class="aside__number">8 800 890 8900</p>
+                        <a class="aside__email" href="#">mail@cps.com</a>
+                        <a class="aside__number" href="#">8 800 890 8900</a>
                         <div class="aside__language">
                             <button class="ru">RU</button>
                             <button class="en">EN</button>
