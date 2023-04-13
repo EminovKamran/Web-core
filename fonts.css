@@ -3,21 +3,21 @@
     font-weight: 400;
     font-style: normal;
     src:
-    url('TTLakes-Regular.woff') format('woff')
+    url('fonts/TTLakes-Regular.woff') format('woff')
 }
 @font-face {
     font-family: 'TT Lakes Medium';
     font-weight: 500;
     font-style: normal;
     src:
-    url('TTLakes-Medium.woff') format('woff')
+    url('fonts/TTLakes-Medium.woff') format('woff')
 }
 @font-face {
     font-family: 'TT Lakes Bold';
     font-weight: 700;
     font-style: normal;
     src:
-    url('TTLakes-Bold.woff') format('woff')
+    url('fonts/TTLakes-Bold.woff') format('woff')
 }
 @font-face {
     font-family: 'TT Lakes Condensed Medium';
