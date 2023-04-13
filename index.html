@@ -10,99 +10,107 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <header class="header">
-                <div class="header__container">
-                    <button class="header__burger"></button>
-                    <a href="#" class="logo header__logo-elem"></a>
+        <div class="wrapper-container">
+            <aside class="aside">
+                <div class="aside__logo">
+                    <a href="#" class="logo header__logo--elem"></a>
+                    <button class="aside-search"></button>
                 </div>
-                <div class="menu-button">
+                <nav class="nav-aside">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#">Ремонт техники</a></li>
+                        <li class="nav__item"><a href="#">Услуги и сервисы</a></li>
+                        <li class="nav__item"><a href="#">Корпоративным клиентам</a></li>
+                        <li class="nav__item"><a href="#">Продавцам техники</a></li>
+                        <li class="nav__item"><a href="#">Партнерам</a></li>
+                        <li class="nav__item"><a href="#">Производителям</a></li>
+                        <li class="nav__item"><a href="#">Наши сервисные центры</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="aside-contact">
                     <button class="call"></button>
                     <button class="message"></button>
                     <button class="user"></button>
-                    <button class="request"></button>
-                    <button class="search"></button>
                 </div>
-            </header>
-            <main class="main">
-                <div class="main__wrapper">
-                    <aside class="aside">
-                        <div class="aside__logo">
-                            <a href="#" class="logo header__logo-elem"></a>
-                            <button class="search__aside"></button>
-                        </div>
-                        <nav class="nav__aside">
-                            <ul class="nav__list">
-                                <li class="nav__item"><a href="#">Ремонт техники</a></li>
-                                <li class="nav__item"><a href="#">Услуги и сервисы</a></li>
-                                <li class="nav__item"><a href="#">Корпоративным клиентам</a></li>
-                                <li class="nav__item"><a href="#">Продавцам техники</a></li>
-                                <li class="nav__item"><a href="#">Партнерам</a></li>
-                                <li class="nav__item"><a href="#">Производителям</a></li>
-                                <li class="nav__item"><a href="#">Наши сервисные центры</a></li>
-                                <li class="nav__item"><a href="#">Контакты</a></li>
-                            </ul>
-                        </nav>
-                        <div class="aside__contact">
-                            <button class="call"></button>
-                            <button class="message"></button>
-                            <button class="user"></button>
-                        </div>
-                        <a class="aside__email" href="#">mail@cps.com</a>
-                        <a class="aside__number" href="#">8 800 890 8900</a>
-                        <div class="aside__language">
-                            <button class="ru">RU</button>
-                            <button class="en">EN</button>
-                            <button class="ch">CH</button>
-                        </div>
-                    </aside>
-                    <div class="main__container">
-                        <div class="main__title">
-                            <p class="main__text">Услуги и сервисы</p>
+                <a class="aside-email" href="#">mail@cps.com</a>
+                <a class="aside-number" href="#">8 800 890 8900</a>
+                <div class="aside-language">
+                    <button class="aside__language__ru">RU</button>
+                    <button class="aside__language__en">EN</button>
+                    <button class="aside__language__ch">CH</button>
+                </div>
+            </aside>
+            <div class="container">
+                <header class="header">
+                    <div class="header__container">
+                        <button class="header__burger"></button>
+                        <a href="#" class="logo header__logo--elem"></a>
+                    </div>
+                    <div class="menu-button">
+                        <button class="call"></button>
+                        <button class="message"></button>
+                        <button class="user"></button>
+                        <button class="request">
+                            <span class="request__img"></span>
+                        </button>
+                        <button class="search">
+                            <span class="search__img"></span>
+                        </button>
+                    </div>
+                </header>
+                <main class="main">
+                    <div class="main__wrapper">
+                        <div class="main__container">
                             <div class="main__container__elem">
-                                <p class="main__container__text">Оставить заявку
-                                    <button class="request"></button>
-                                </p>
-                                <p class="main__container__text">Статус ремонта
-                                    <button class="search"></button>
-                                </p>
+                                <p class="main__text">Услуги и сервисы</p>
+                                <div class="main__button__elem">
+                                    <button class="request">
+                                        <span class="request__text">Оставить заявку</span>
+                                        <span class="request__img"></span>
+                                    </button>
+                                    <button class="search">
+                                        <span class="search__text">Статус ремонта</span>
+                                        <span class="search__img"></span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <nav class="menu">
-                            <ul class="main__menu">
-                                <li class="main__item main__item-border"><a href="#"></a>Ремонтируемые бренды</li>
-                                <li class="main__item"><a href="#">Дополнительные услуги</a></li>
-                                <li class="main__item"><a href="#">Цены на услуги</a></li>
-                                <li class="main__item"><a href="#">Адреса сервисных центров</a></li>
-                                <li class="main__item"><a href="#">Специальные цены</a></li>
-                                <li class="main__item"><a href="#">Отзывы</a></li>
-                            </ul>
-                        </nav>
-                        <section class="main__description">
-                            <div class="main__description__box">
-                                <p class="main__description-about-me">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                                <p class="main__description-continue">
-                                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                                    <span class="main__description-continue-two">
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item menu__item--border"><a href="#"></a>Ремонтируемые бренды</li>
+                                    <li class="menu__item"><a href="#">Дополнительные услуги</a></li>
+                                    <li class="menu__item"><a href="#">Цены на услуги</a></li>
+                                    <li class="menu__item"><a href="#">Адреса сервисных центров</a></li>
+                                    <li class="menu__item"><a href="#">Специальные цены</a></li>
+                                    <li class="menu__item"><a href="#">Отзывы</a></li>
+                                </ul>
+                            </nav>
+                            <section class="main__description">
+                                <div class="main__description__box">
+                                    <p class="main__description--about--me">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                                    <p class="main__description--continue">
+                                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                                        <span class="main__description--continue--two">
                                     что подтверждает большое количество постоянных клиентов.
                                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                                     </span>
-                                </p>
-                                <button class="main__description__next">
-                                    <span class="main__description-img"></span>
-                                    Читать далее
-                                </button>
-                            </div>
-                            <picture class="main__image">
-                                <source srcset="images/main__image-1440.png" media="(min-width: 1250px)">
-                                <source srcset="images/main__image768.png" media="(min-width: 650px)">
-                                <img src="images/img_main.png" alt="main_img">
-                            </picture>
-                        </section>
+                                    </p>
+                                    <button class="main__description__next">
+                                        <span class="main__description__img"></span>
+                                        Читать далее
+                                    </button>
+                                </div>
+                                <picture class="main__image">
+                                    <source srcset="images/main__image-1440.png" media="(min-width: 1250px)">
+                                    <source srcset="images/main__image768.png" media="(min-width: 650px)">
+                                    <img src="images/img_main.png" alt="main_img">
+                                </picture>
+                            </section>
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
     </div>
 </body>
