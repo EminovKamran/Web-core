@@ -408,6 +408,51 @@ body {
     height: 250px;
     margin-top: 16px;
 }
+.swiper-container {
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+.swiper-title {
+    font-family: 'TT Lakes Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    padding: 16px 0 16px 16px;
+    margin: 0;
+}
+.swiper-slide__icon {
+    background-image: url("images/dropdown.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #FF3E79;
+    transition: all 0.5s;
+}
+.swiper-slide {
+    width: auto;
+}
+.swiper-slide--box {
+    width: 208px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding: 16px;
+}
+.swiper-wrapper {
+    padding: 24px 16px;
+}
+.swiper-pagination {
+    position: static;
+    padding-bottom: 24px;
+}
+
 @media (min-width: 380px) {
     .header__container::after {
         display: none;
