@@ -237,7 +237,7 @@ body {
 .main__section__elem {
     margin: 0 0 24px 0;
 }
-.main__description--about--me {
+.main-description__about {
     font-family: 'TT Lakes Regular', sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -266,38 +266,39 @@ body {
     border-radius: 0 9px 9px 0;
     margin-right: 16px;
 }
-.main__description__img {
+.button-view__img {
     background-image: url("images/icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
     height: 24px;
-    margin-right: 8px;
 }
-.main__description__next {
+.button-view {
     text-decoration: none;
     font-family: 'TT Lakes Medium',sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
-    margin-top: 16px;
     background: none;
     border: none;
     display: flex;
     cursor: pointer;
     transition: all 0.5s;
+    padding: 16px 8px 0 0;
+    align-items: center;
+    gap: 8px;
 }
-.main__description__next:hover {
+.button-view:hover {
     color: #7E7E82;
 }
-.main__description__box {
+.main-description__container {
     margin: 0 16px 0 16px;
 }
 .menu-button__laptop {
     display: none;
 }
-.main__description--continue {
+.main-description__continue {
     display: none;
 }
 .main__description-continue--two {
@@ -338,7 +339,7 @@ body {
     width: auto;
 }
 .swiper-slide--box {
-    width: 208px;
+    width: 190px;
     min-height: 62px;
     display: flex;
     align-items: center;
@@ -349,13 +350,26 @@ body {
     padding: 16px;
 }
 .swiper-wrapper {
-    padding: 24px 16px;
+    padding: 24px 24px;
     max-width: 1064px;
+    width: auto;
+    height: auto;
 }
 .swiper-pagination {
     position: static;
     padding-bottom: 24px;
 }
+.button-view--slider {
+    display: none;
+}
+/*.swiper-slide--tablet--inactive {*/
+/*    overflow: hidden;*/
+/*    height: 0;*/
+/*}*/
+/*.swiper-slide--desktop--inactive {*/
+/*    overflow: hidden;*/
+/*    height: 0;*/
+/*}*/
 
 @media (min-width: 380px) {
     .header__container::after {
@@ -400,11 +414,11 @@ body {
         background: #EAEAEA;
         margin-left: -20px;
     }
-    .main__description {
+    .main-description {
         display: flex;
         justify-content: space-between;
     }
-    .main__description--continue {
+    .main-description__continue {
         font-family: 'TT Lakes Regular', sans-serif;
         font-size: 14px;
         line-height: 18px;
@@ -429,10 +443,10 @@ body {
     .menu__list {
         margin: 0 0 24px 0;
     }
-    .main__description--continue--two {
+    .main-description__desktop {
         display: none;
     }
-    .main__description__box {
+    .main-description__container {
         margin: 0 18px 0 0;
     }
     .main__button__elem {
@@ -450,7 +464,7 @@ body {
 @media (min-width: 768px) {
     .swiper-wrapper {
         display: flex;
-        column-gap: 32px;
+        column-gap: 24px;
         flex-wrap: wrap;
         row-gap: 16px;
         padding: 24px 24px;
@@ -458,7 +472,35 @@ body {
     .swiper-title {
         padding: 16px 0 16px 24px;
     }
+    .button-view--slider {
+        display: flex;
+        padding: 0 0 0 24px;
+    }
+    .swiper-slide--desktop--inactive {
+        display: none;
+    }
+    .swiper-slide--tablet--inactive {
+        display: none;
+    }
+    .swiper.active .swiper-slide--tablet--inactive {
+        display: flex;
+    }
+    .swiper.active .button-view__img {
+        background-image: url("images/expand.svg");
+    }
+    .swiper-pagination {
+        display: none;
+    }
 }
+@media (min-width: 1016px) {
+    .swiper-slide--tablet--inactive {
+        display: flex;
+    }
+    .swiper.active .swiper-slide--desktop--inactive {
+        display: flex;
+    }
+}
+
 @media (min-width: 1250px) {
     .header {
         padding: 0;
@@ -522,7 +564,7 @@ body {
         margin-left: -33px;
         position: absolute;
     }
-    .main__description__box {
+    .main-description__container {
         margin: 0 16px 0 0;
     }
     .main__wrapper {
@@ -531,7 +573,7 @@ body {
     .header__logo--elem {
         margin: 0;
     }
-    .main__description--continue--two {
+    .main-description__desktop {
         display: inline;
     }
     .main__container__text {
@@ -561,5 +603,8 @@ body {
     }
     .swiper-title {
         padding: 16px 0 16px 32px;
+    }
+    . {
+        padding: 0 0 0 32px;
     }
 }
