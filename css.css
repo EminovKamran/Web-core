@@ -345,7 +345,7 @@ body {
     width: auto;
 }
 .swiper-slide--box {
-    width: 190px;
+    width: 180px;
     min-height: 62px;
     display: flex;
     align-items: center;
