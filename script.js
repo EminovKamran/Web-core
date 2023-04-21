@@ -13,27 +13,23 @@ function mobileSlider() {
         mySwiper = new Swiper('.swiper', {
                direction: 'horizontal',
                 slidesPerView: 'auto',
-               spaceBetween: 15,
-               loop: true,
+                spaceBetween: 15,
+                watchOverflow: true,
+               loop: false,
                pagination: {
                    el: '.swiper-pagination',
                    clickable: true,
                },
            });
-        // pagination.style.display = 'block';
     } else if (window.innerWidth >= width && mySwiper !== undefined) {
         mySwiper.destroy();
         mySwiper = undefined;
-        // pagination.style.display = 'none';
     }
 }
-mobileSlider()
-window.addEventListener("resize", mobileSlider)
+mobileSlider();
+window.addEventListener("resize", mobileSlider);
 
 function viewSlider() {
-    swiperSlide.classList.add('active')
-    buttonViewText.textContent = 'Скрыть';
-    buttonViewSlider.addEventListener('click', () => {
         if (swiperSlide.classList.contains('active')) {
             swiperSlide.classList.remove('active');
             buttonViewText.textContent = 'Показать всё';
@@ -41,7 +37,6 @@ function viewSlider() {
             swiperSlide.classList.add('active')
             buttonViewText.textContent = 'Скрыть';
         }
-    })
 }
 
 
