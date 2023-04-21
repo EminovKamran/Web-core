@@ -15,7 +15,7 @@ function mobileSlider() {
                 slidesPerView: 'auto',
                 spaceBetween: 15,
                 watchOverflow: true,
-               loop: false,
+               loop: true,
                pagination: {
                    el: '.swiper-pagination',
                    clickable: true,
