@@ -350,7 +350,7 @@ body {
     padding: 16px;
 }
 .swiper-wrapper {
-    padding: 24px 24px;
+    padding: 24px 16px;
     max-width: 1064px;
     width: auto;
     height: auto;
@@ -362,17 +362,20 @@ body {
 .button-view--slider {
     display: none;
 }
-/*.swiper-slide--tablet--inactive {*/
-/*    overflow: hidden;*/
-/*    height: 0;*/
-/*}*/
-/*.swiper-slide--desktop--inactive {*/
-/*    overflow: hidden;*/
-/*    height: 0;*/
-/*}*/
-
+.shadow {
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    right: 0;
+    top: 14%;
+    z-index: 2;
+}
 @media (min-width: 380px) {
     .header__container::after {
+        display: none;
+    }
+    .shadow {
         display: none;
     }
 }
