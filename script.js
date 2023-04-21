@@ -14,11 +14,11 @@ function mobileSlider() {
                    clickable: true,
                },
            });
-        pagination.style.position = 'static';
+        pagination.style.display = 'block';
     } else if (window.innerWidth > width && mySwiper !== undefined) {
         mySwiper.destroy();
         mySwiper = undefined;
-        pagination.style.position = 'absolute';
+        pagination.style.display = 'none';
     }
 }
 mobileSlider()
