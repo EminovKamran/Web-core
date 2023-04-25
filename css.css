@@ -272,14 +272,14 @@ body {
     border-radius: 0 9px 9px 0;
     margin-right: 16px;
 }
-.button-view__img {
+.show-button__img {
     background-image: url("images/icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
     height: 24px;
 }
-.button-view {
+.show-button {
     text-decoration: none;
     font-family: 'TT Lakes Medium',sans-serif;
     font-size: 16px;
@@ -291,11 +291,13 @@ body {
     display: flex;
     cursor: pointer;
     transition: all 0.5s;
-    padding: 16px 8px 0 0;
     align-items: center;
     gap: 8px;
 }
-.button-view:hover {
+.main-description__button {
+    padding: 16px 8px 0 0;
+}
+.show-button:hover {
     color: #7E7E82;
 }
 .main-description__container {
@@ -318,70 +320,59 @@ body {
     height: 250px;
     margin-top: 16px;
 }
-.swiper-container {
-    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-}
-.swiper-title {
+.brands__title {
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding: 16px 0 16px 16px;
+    margin: 0;
     font-family: 'TT Lakes Regular', sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
     color: #7E7E82;
-    padding: 16px 0 16px 16px;
+}
+.cards {
+    max-width: 1120px;
+    padding: 16px 16px;
+}
+.cards__list {
+    list-style-type: none;
     margin: 0;
+    padding: 0 0 24px 0;
 }
-.swiper-slide__icon {
-    background-image: url("images/dropdown.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: 2px solid #FF3E79;
-    transition: all 0.5s;
-}
-.swiper-slide {
-    width: auto;
-}
-.swiper-slide--box {
-    width: 180px;
-    min-height: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.card {
+    flex-basis: 240px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
-    padding: 16px;
-    cursor: pointer;
-    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-grow: 1;
 }
-.swiper-slide--box:hover > .swiper-slide__icon {
-    background-color: #8c8688;
-    opacity: 0.6;
+.card__icon {
+    background-image: url("images/dropdown.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8px;
+    height: 12px;
+    padding: 14px 17px;
+    border: 2px solid #FF3E79;
+    border-radius: 20px;
 }
-.swiper-wrapper {
-    padding: 24px 16px;
-    max-width: 1064px;
-    width: auto;
-    height: auto;
+.swiper-pagination-bullet-active {
+    background: #6e6e74;
+    width: 12px;
+    height: 12px;
 }
-.swiper-pagination {
-    position: static;
-    padding-bottom: 24px;
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
 }
-.button-view--slider {
+.show-button {
     display: none;
-}
-.shadow {
-    width: 24px;
-    height: 81px;
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-    position: absolute;
-    right: 0;
-    top: 14%;
-    z-index: 2;
 }
 
 @media (min-width: 380px) {
@@ -477,51 +468,47 @@ body {
         max-width: 312px;
     }
 }
+
 @media (min-width: 768px) {
-    .swiper-wrapper {
+    .cards {
+        padding: 24px 24px;
+        overflow: hidden;
+        height: 150px;
+    }
+    .card {
+        flex-basis: 224px;
+        height: 72px;
+    }
+    .cards__list {
         display: flex;
-        column-gap: 24px;
+        max-width: 1055px;
         flex-wrap: wrap;
         row-gap: 16px;
-        padding: 24px 24px;
+        column-gap: 24px;
+        padding: 0;
     }
-    .swiper-title {
+    .brands__title {
         padding: 16px 0 16px 24px;
-    }
-    .button-view--slider {
-        display: flex;
-        padding: 0 0 0 24px;
-    }
-    .swiper-slide--desktop--inactive {
-        display: none;
-    }
-    .swiper-slide--tablet--inactive {
-        display: none;
-    }
-    .swiper.active .swiper-slide--tablet--inactive {
-        display: flex;
-    }
-    .swiper.active .button-view__img {
-        background-image: url("images/expand.svg");
     }
     .swiper-pagination {
         display: none;
     }
-}
-@media (min-width: 1016px) {
-    .swiper-slide--tablet--inactive {
+    .show-button {
         display: flex;
     }
-    .swiper.active .swiper-slide--desktop--inactive {
-        display: flex;
+    .brands-container__button {
+        padding: 0 0 0 24px;
     }
-    .swiper-slide--box {
-        width: 190px;
+    .brands-container.active .cards {
+        overflow: visible;
+        height: auto;
     }
-}
-@media (min-width: 1050px) {
-    .swiper-slide--box {
-        width: 214px;
+    .brands-container.active .show-button__img {
+        background-image: url("images/expand.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -622,13 +609,13 @@ body {
         height: auto;
         margin-top: 0;
     }
-    .swiper-wrapper {
+    .cards {
         padding: 24px 32px;
     }
-    .swiper-title {
+    .brands__title {
         padding: 16px 0 16px 32px;
     }
-    . {
+    .brands-container__button {
         padding: 0 0 0 32px;
     }
 }

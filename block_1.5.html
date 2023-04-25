@@ -1,97 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="fonts.css">
-    <title>Web-core 1.5</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="fonts.css">
+  <title>Web-core 1.5</title>
 </head>
-    <body>
-    <div class="wrapper">
-        <div class="swiper-container">
-            <h2 class="swiper-title">Ремонт техники различных брендов</h2>
-        </div>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide--box">
-                    <div class="swiper-slide__img">
-                        <img src="./images/lenovo.png" alt="brand-lenovo">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box">
-                    <div class="swiper-slide__img">
-                        <img src="./images/samsung.png" alt="brand-samsung">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box">
-                    <div class="swiper-slide__img">
-                        <img src="./images/apple.png" alt="brand-apple">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box">
-                    <div class="swiper-slide__img">
-                        <img src="./images/ViewSonic.png" alt="brand-ViewSonic">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box">
-                    <div class="swiper-slide__img">
-                        <img src="./images/Bosch.png" alt="brand-bosch">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box">
-                    <div class="swiper-slide__img">
-                        <img src="./images/hp.png" alt="brand-hp">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box swiper-slide--tablet--inactive">
-                    <div class="swiper-slide__img">
-                        <img src="./images/Acer.png" alt="brand-acer">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box swiper-slide--tablet--inactive">
-                    <div class="swiper-slide__img">
-                        <img src="./images/SONY.png" alt="brand-SONY">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box swiper-slide--desktop--inactive">
-                    <div class="swiper-slide__img">
-                        <img src="./images/lenovo.png" alt="brand-lenovo">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box swiper-slide--desktop--inactive">
-                    <div class="swiper-slide__img">
-                        <img src="./images/samsung.png" alt="brand-samsung">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-                <div class="swiper-slide swiper-slide--box swiper-slide--desktop--inactive">
-                    <div class="swiper-slide__img">
-                        <img src="./images/apple.png" alt="brand-apple">
-                    </div>
-                    <div class="swiper-slide__icon"></div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <button class="button-view button-view--slider">
-                <span class="button-view__img"></span>
-                <span class="button-view__text">Показать всё</span>
-            </button>
-        </div>
+  <body>
+  <section class="brands">
+    <h3 class="brands__title">Ремонт техники различных брендов</h3>
+    <div class="brands-container">
+      <div class="swiper cards">
+        <ul class="swiper-wrapper cards__list">
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/lenovo.png" alt="lenovo-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/samsung.png" alt="samsung-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/apple.png" alt="apple-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="images/viewsonic.png" alt="viewsonic-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/bosch.png" alt="bosch-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" height="44px" src="./images/hp.png" alt="hp-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/acer.png" alt="acer-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/sony.png" alt="sony-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/lenovo.png" alt="lenovo-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/samsung.png" alt="samsung-img">
+            <span class="card__icon"></span>
+          </li>
+          <li class="swiper-slide card">
+            <img class="card__img" src="./images/apple.png" alt="apple-img">
+            <span class="card__icon"></span>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <button class="show-button brands-container__button">
+        <span class="show-button__img"></span>
+        <span class="show-button__text">Показать всё</span>
+      </button>
     </div>
-    <div class="shadow"></div>
-    <script src="slider.js"></script>
-    <script src="script.js"></script>
-    </body>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  </body>
 </html>

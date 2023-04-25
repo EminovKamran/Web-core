@@ -1,12 +1,11 @@
 const width = 768;
 let mySwiper = undefined;
-const pagination = document.querySelector('.swiper-pagination');
-const buttonViewSlider = document.querySelector('.button-view');
-const swiperSlide = document.querySelector('.swiper');
-const buttonViewText = document.querySelector('.button-view__text')
+const showButton = document.querySelector('.show-button');
+const showButtonText = document.querySelector('.show-button__text');
+const cards = document.querySelector('.brands-container');
 
 
-buttonViewSlider.addEventListener('click', viewSlider);
+showButton.addEventListener('click', viewSlider);
 
 function mobileSlider() {
     if (window.innerWidth < width && mySwiper === undefined) {
@@ -28,14 +27,13 @@ function mobileSlider() {
 }
 mobileSlider();
 window.addEventListener("resize", mobileSlider);
-
 function viewSlider() {
-        if (swiperSlide.classList.contains('active')) {
-            swiperSlide.classList.remove('active');
-            buttonViewText.textContent = 'Показать всё';
+        if (cards.classList.contains('active')) {
+            cards.classList.remove('active');
+            showButtonText.textContent = 'Показать всё';
         } else {
-            swiperSlide.classList.add('active')
-            buttonViewText.textContent = 'Скрыть';
+            cards.classList.add('active')
+            showButtonText.textContent = 'Скрыть';
         }
 }
 
