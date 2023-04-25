@@ -374,6 +374,15 @@ body {
 .show-button {
     display: none;
 }
+.shadow {
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    right: 0;
+    top: 11%;
+    z-index: 2;
+    width: 24px;
+    height: 81px;
+}
 
 @media (min-width: 380px) {
     .header__container::after {
@@ -472,8 +481,8 @@ body {
 @media (min-width: 768px) {
     .cards {
         padding: 24px 24px;
-        overflow: hidden;
         height: 150px;
+        transition: all 0.5s;
     }
     .card {
         flex-basis: 224px;
@@ -500,8 +509,7 @@ body {
         padding: 0 0 0 24px;
     }
     .brands-container.active .cards {
-        overflow: visible;
-        height: auto;
+        height: 338px;
     }
     .brands-container.active .show-button__img {
         background-image: url("images/expand.svg");
@@ -510,8 +518,15 @@ body {
         width: 24px;
         height: 24px;
     }
+    .shadow {
+        display: none;
+    }
 }
-
+@media (min-width: 1120px) {
+    .brands-container.active .cards {
+        height: 248px;
+    }
+}
 @media (min-width: 1250px) {
     .header {
         padding: 0;
